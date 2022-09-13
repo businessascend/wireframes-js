@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link rel="stylesheet" href="css/pico.min.css"-->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="../style.css">
+        <title>Register new data</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../script.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <h1>New Survey / Poll result</h1>
+            <form method="post">
+                <div class="row">
+                    <div class="column">
+                        <label for="published-date">
+                            Publication Date
+                            <input type="date" name="published-date" id="published-date">
+                        </label>
+                        <!-- <label for="source">
+                            Source
+                            <select name="source" id="source">
+                                <option value="">Select one</option>
+                                <option value="mediapool.bg">mediapool.bg</option>
+                                <option value="24chasa.bg">24 Chasa Daily and 24chasa.bg</option>
+                                <option value="dnevnik.gb">dnevnik.gb</option>
+                                <option value="offnews.bg">offnews.bg</option>
+                            </select>
+                        </label> -->
+                        <label for="survey-institute">
+                            Institute
+                            <select name="survey-institute" id="survey-institute">
+                                <option value="">Select one</option>
+                                <option value="Alpha-Research">Alpha Research</option>
+                                <option value="Exacta">Exacta</option>
+                                <option value="Gallup-International">Gallup International</option>
+                                <option value="General-election">General election</option>
+                                <option value="Legislative-election-results">Legislative election results</option>
+                                <option value="Market-Links">Market Links</option>
+                                <option value="Mediana">Mediana</option>
+                                <option value="National-Elections">National Elections</option>
+                                <option value="Trend">Trend</option>
+                            </select>
+                        </label>
+                        <label for="survey-type">
+                            Sample & Method (Survey type)
+                            <select name="survey-type" id="survey-type">
+                                <option value="">Select one</option>
+                                <option value="1017-face-to-face">1017 face to face</option>
+                                <option value="1058-face-to-face">1058 face to face</option>
+                                <option value="1002-face-to-face">1002 face to face</option>
+                                <option value="1004-face-to-face">1004 face to face</option>
+                                <option value="1025-face-to-face">1025 face to face</option>
+                                <option value="1000-face-to-face">1000 face to face</option>
+                                <option value="1009-face-to-face">1009 face to face</option>
+                                <option value="1008-face-to-face">1008 face to face</option>
+                                <option value="1017-face-to-face">1017 face to face</option>
+                                <option value="846-anonymouse-phone-interviews">846 anonymouse phone interviews</option>
+                            </select>
+                        </label>
+                        <div class="column left2">
+                            <label for="survey-start">
+                                Fieldwork (Start)
+                                <input type="date" name="survey-start" id="survey-start">
+                            </label>
+                        </div>
+                        <div class="column left2">
+                            <label for="survey-end">
+                                (End)
+                                <input type="date" name="survey-end" id="survey-end">
+                            </label>
+                        </div>
+                        
+                        <!-- <div class="column">
+                            <div class="row added-row" id="added-row">
+                                
+                            </div>
+                            <div class="row added-row" id="added-row2">
+                                
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="column_3 left">
+                        <label for="party">
+                            Political party or coalition
+                            <!-- <select name="party" id="party">
+                                <option value="">Select one</option>
+                                <option value="GERB+SDS">GERB + SDS</option>
+                                <option value="BSP">BSP</option>
+                                <option value="DPS">DPS</option>
+                                <option value="United-Patriots">United Patriots (VMRO + NFSB)</option>
+                                <option value="Coalition-DB">Coalition DB</option>
+                                <option value="Volya">Volya</option>
+                                <option value="ATAKA">ATAKA</option>
+                                <option value="BDC-(former BWC)">BDC (former BWC)</option>
+                            </select> -->
+                            <!-- <div class="grid-container2">
+                                <div class="grid-item"><span>GERB + SDS</span><input placeholder="Value(%)" type="text" name="GERB + SDS"></div>
+                                <div class="grid-item"><span>BSB</span><input placeholder="Value(%)" type="text" name="BSB"></div>
+                                <div class="grid-item"><span>DSP</span><input placeholder="Value(%)" type="text" name="DSP"></div>
+                                <div class="grid-item"><span>United Patriots (VMRO + NFSB)</span><input placeholder="Value(%)" type="text" name="United-Patriots"></div>
+                                <div class="grid-item"><span>Coalition DB</span><input placeholder="Value(%)" type="text" name="Coalition-DB"></div>
+                                <div class="grid-item"><span>Volya</span><input placeholder="Value(%)" type="text" name="Volya"></div>
+                                <div class="grid-item"><span>ATAKA</span><input placeholder="Value(%)" type="text" name="ATAKA"></div>
+                                <div class="grid-item"><span>BDC (former BWC)</span><input placeholder="Value(%)" type="text" name="BDC (former BWC)"></div>
+                                <div class="grid-item"><span>Revival</span><input placeholder="Value(%)" type="text" name="Revival"></div>
+                            </div> -->
+
+                            <input type="text" name="party" id="GERB+SDS" value="GERB + SDS">
+
+
+                        </label>
+                    </div>
+                    <div class="column_3 left-value">
+                        <label for="voting-share">
+                            Value (%)
+                            <input type="text" name="voting-share" id="share_GERB+SDS">
+                        </label>
+                    </div>
+
+                    <div class="column_3 left">
+                        <input type="text" name="party" id="BSP" value="BSP">
+                    </div>
+                    <div class="column_3 left-value">
+                        <input type="text" name="voting-share" id="share_BSP">
+                    </div>
+
+                    <div class="column_3 left">
+                        <input type="text" name="party" id="DPS" value="DPS">
+                    </div>
+                    <div class="column_3 left-value">
+                        <input type="text" name="voting-share" id="share_DPS">
+                    </div>
+
+                    <div class="column_3 left">
+                        <input type="text" name="party" id="United-Patriots" value="United Patriots (VMRO + NFSB)">
+                    </div>
+                    <div class="column_3 left-value">
+                        <input type="text" name="voting-share" id="share_United-Patriots">
+                    </div>
+
+                    
+                </div>
+                  
+                <div class="row">
+                    
+                <!-- <label for="political-group">
+                    Current Political Group
+                    <select name="political-group" id="political-group">
+                        <option value=""></option>
+                        <option value="EPP">EPP</option>
+                        <option value="S&D">S&D</option>
+                        <option value="ALDE">ALDE</option>
+                        <option value="ECR">ECR</option>
+                        <option value="EPP">EPP</option>
+                    </select>
+                </label> -->
+                </div>
+                
+                <button class="my-buttn">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>

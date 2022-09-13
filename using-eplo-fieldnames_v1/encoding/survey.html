@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link rel="stylesheet" href="css/pico.min.css"-->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <title>Register new data</title>
+    </head>
+    <body>
+        <main class="container">
+            <h1>New Survey / Poll result</h1>
+            <form method="post">
+                <label for="published-date">
+                    Published date
+                    <input type="text" name="published-date" id="published-date">
+                </label>
+                <label for="source">
+                    Source
+                    <select name="source" id="source">
+                        <option value="">Select one</option>
+                        <option value="mediapool.bg">mediapool.bg</option>
+                        <option value="24chasa.bg">24 Chasa Daily and 24chasa.bg</option>
+                        <option value="dnevnik.gb">dnevnik.gb</option>
+                        <option value="offnews.bg">offnews.bg</option>
+                    </select>
+                </label>
+                <label for="survey-institute">
+                    Survey institute
+                    <select name="survey-institute" id="survey-institute">
+                        <option value="">Select one</option>
+                        <option value="Alpha-Research">Alpha Research</option>
+                        <option value="Market-Links">Market Links</option>
+                        <option value="Trend">Trend</option>
+                        <option value="Exacta-Research-Group">Exacta Research Group</option>
+                        <option value="Barometre-Bulgaria">Barometre Bulgaria</option>
+                        <option value="Mediana">Mediana</option>
+                    </select>
+                </label>
+                <label for="survey-type">
+                    Sample & Method (Survey type)
+                    <select name="survey-type" id="survey-type">
+                        <option value="">Select one</option>
+                        <option value="1017-face-to-face">1017 face to face</option>
+                        <option value="1058-face-to-face">1058 face to face</option>
+                        <option value="1002-face-to-face">1002 face to face</option>
+                        <option value="1004-face-to-face">1004 face to face</option>
+                        <option value="1025-face-to-face">1025 face to face</option>
+                        <option value="1000-face-to-face">1000 face to face</option>
+                        <option value="1009-face-to-face">1009 face to face</option>
+                        <option value="1008-face-to-face">1008 face to face</option>
+                        <option value="1017-face-to-face">1017 face to face</option>
+                        <option value="846-anonymouse-phone-interviews">846 anonymouse phone interviews</option>
+                    </select>
+                </label>
+                <label for="survey-period">
+                    Fieldwork (Period survey was done)
+                    <input type="text" name="survey-period" id="survey-period">
+                </label>
+                <label for="party">
+                    Political Party
+                    <select name="party" id="party">
+                        <option value="">Select one</option>
+                        <option value="GERB">GERB</option>
+                        <option value="BSP">BSP</option>
+                        <option value="DPS">DPS</option>
+                        <option value="BDC-(former BWC)">BDC (former BWC)</option>
+                        <option value="VMRO-BND">VMRO BND</option>
+                        <option value="DSB">DSB</option>
+                        <option value="United-Patriots">United Patriots</option>
+                        <option value="Bulgarian-Patriots">Bulgarian Patriots</option>
+                        <option value="Volya">Volya</option>
+                        <option value="Coalition-RB">Coalition RB</option>
+                    </select>
+                </label>
+                <label for="voting-share">
+                    Voting share (%)
+                    <input type="text" name="voting-share" id="voting-share">
+                </label>
+                <label for="political-group">
+                    Current Political Group
+                    <select name="political-group" id="political-group">
+                        <option value=""></option>
+                        <option value="EPP">EPP</option>
+                        <option value="S&D">S&D</option>
+                        <option value="ALDE">ALDE</option>
+                        <option value="ECR">ECR</option>
+                        <option value="EPP">EPP</option>
+                    </select>
+                </label>
+                
+                <button>Submit</button>
+            </form>
+        </main>
+    </body>
+</html>

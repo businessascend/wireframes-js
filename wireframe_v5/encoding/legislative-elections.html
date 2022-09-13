@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link rel="stylesheet" href="css/pico.min.css"-->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="../style.css">
+        <title>Register new data</title>
+    </head>
+    <body>
+        <main class="container">
+            <h1>New Legislative Elections result</h1>
+            <form method="post">
+                <label for="year">
+                    Year
+                    <input type="text" name="year" id="year">
+                </label>
+                <label for="threshold">
+                    Margin of error (Threshold)
+                    <input type="text" name="threshold" id="threshold">
+                </label>
+                <label for="party">
+                    Political Party
+                    <select name="party" id="party">
+                        <option value="">Select one</option>
+                        <option value="GERB">GERB</option>
+                        <option value="BSP">BSP</option>
+                        <option value="DPS">DPS</option>
+                        <option value="BDC-(former BWC)">BDC (former BWC)</option>
+                        <option value="VMRO-BND">VMRO BND</option>
+                        <option value="DSB">DSB</option>
+                        <option value="United-Patriots">United Patriots</option>
+                        <option value="Bulgarian-Patriots">Bulgarian Patriots</option>
+                        <option value="Volya">Volya</option>
+                        <option value="Coalition-RB">Coalition RB</option>
+                    </select>
+                </label>
+                <label for="voting-share">
+                    Voting share (%)
+                    <input type="text" name="voting-share" id="voting-share">
+                </label>
+                <!-- <label for="seats">
+                    Seats (Yes or No)
+                    <select name="seats" id="seats">
+                        <option value="">Select one</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </label> -->
+                <div class="mydiv2">
+                    <label>Seats (Yes or No)</label>
+                    <input type="checkbox" id="Yes" name="Yes" value="Yes">
+                        <label for="yes">Yes</label>
+                    <input type="checkbox" id="No" name="No" value="No">
+                        <label for="No">No</label>
+                </div>
+                
+                <label for="political-group">
+                    Current Political Group
+                    <select name="political-group" id="political-group">
+                        <option value=""></option>
+                        <option value="EPP">EPP</option>
+                        <option value="S&D">S&D</option>
+                        <option value="ALDE">ALDE</option>
+                        <option value="ECR">ECR</option>
+                        <option value="EPP">EPP</option>
+                    </select>
+                </label>
+                
+                <button>Submit</button>
+            </form>
+        </main>
+    </body>
+</html>

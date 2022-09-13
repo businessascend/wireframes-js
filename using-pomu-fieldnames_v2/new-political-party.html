@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link rel="stylesheet" href="css/pico.min.css"-->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <title>Register new data</title>
+    </head>
+    <body>
+        <main class="container">
+            <h1>New Political Party</h1>
+            <form method="post">
+                <label for="name">
+                    Name
+                    <input type="text" name="name" id="name">
+                </label>
+                <label for="country">
+                    Country of registration
+                    <input type="text" name="country" id="country">
+                </label>
+                <label for="core-values">
+                    Core values (separate by semi-colon)
+                    <input type="text" name="core-values" id="core-values">
+                </label>
+                <fieldset>  
+                    <legend><b>Address of main office:</b></legend>
+                    <label for="city">
+                        City
+                        <input type="text" name="city" id="city">
+                    </label>
+                    <label for="zip">
+                        Zip
+                        <input type="text" name="zip" id="zip">
+                    </label>
+                    <label for="street">
+                        Street
+                        <input type="text" name="street" id="street">
+                    </label>
+                    <label for="number">
+                        Number
+                        <input type="text" name="number" id="number">
+                    </label>
+                </fieldset>
+                <button>Register</button>
+            </form>
+        </main>
+    </body>
+</html>

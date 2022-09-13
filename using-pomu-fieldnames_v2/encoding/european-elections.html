@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link rel="stylesheet" href="css/pico.min.css"-->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <title>Register new data</title>
+    </head>
+    <body>
+        <main class="container">
+            <h1>New European Elections result</h1>
+            <form method="post">
+                <label for="year">
+                    Year
+                    <input type="text" name="year" id="year">
+                </label>
+                <label for="threshold">
+                    Margin of error (Threshold)
+                    <input type="text" name="threshold" id="threshold">
+                </label>
+                <label for="party">
+                    Political Party
+                    <select name="party" id="party">
+                        <option value="">Select one</option>
+                        <option value="GERB">GERB</option>
+                        <option value="BSP">BSP</option>
+                        <option value="DPS">DPS</option>
+                        <option value="BDC-(former BWC)+VMRO-BND">BDC (former BWC) + VMRO BND</option>
+                        <option value="DSB">DSB</option>
+                        <option value="United-Patriots">United Patriots</option>
+                        <option value="Bulgarian-Patriots">Bulgarian Patriots</option>
+                        <option value="Volya">Volya</option>
+                        <option value="Coalition-RB">Coalition RB</option>
+                    </select>
+                </label>
+                <label for="voting-share">
+                    Voting share (%)
+                    <input type="text" name="voting-share" id="voting-share">
+                </label>
+                <label for="political-group">
+                    Current Political Group
+                    <select name="political-group" id="political-group">
+                        <option value=""></option>
+                        <option value="EPP">EPP</option>
+                        <option value="S&D">S&D</option>
+                        <option value="RE">RE</option>
+                        <option value="ID">ID</option>
+                        <option value="G/EFA">G/EFA</option>
+                        <option value="ECR">ECR</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="NA">NA</option>
+                        <option value="ALDE">ALDE</option>
+                    </select>
+                </label>
+                
+                <button>Submit</button>
+            </form>
+        </main>
+    </body>
+</html>

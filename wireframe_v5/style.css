@@ -1,0 +1,198 @@
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+.mydiv {
+    margin-bottom: 100px;
+}
+.mydiv2 {
+    margin-bottom: 25px;
+}
+/* .greyed-out {
+    background-color: grey;
+} */
+.my-buttn {
+	font-size: 1.5em;
+	/* width: 25%; */
+    background-color: #2196F3;
+}
+.my-buttn2 {
+	font-size: 1em;
+}
+.my-buttn3 {
+	width: 60%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #dce7f0;
+    padding: 10px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-container2 > .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* .myfieldset {
+    border: 1px solid rgba(0, 0, 0, 0.8); 
+} */
+.column {
+    float: left;
+    width: 40%;
+  }
+.column_ {
+  float: left;
+  width: 50%;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column_3 {
+    float: left;
+    width: 100%;
+    margin-left: 80px;
+  }
+  .left {
+    width: 65%;
+  }
+  .left2 {
+    width: 50%;
+  }
+  .left-value {
+    width: 15%;
+    margin-left: 10px;
+  }
+  .right {
+    padding-top: 4px;
+    padding-left: 4px;
+    width: 15%;
+  }
+  .addbuttn {
+	background-color: #1a3012;
+    border: 1px solid #1a3012;
+  }
+  span.addb {
+    display: block;
+    color:rgba(255, 255, 255, 0.8);
+  }
+
+  .addedInput:disabled {
+    background-color: #ecf0f3;
+    color:rgb(3, 6, 36);
+    /* display: inline;
+    width: 30px; */
+  }
+
+  .added-row {
+    padding-top: 33px;
+    padding-left: 40px;
+  }
+
+  #added-party {
+    width: 50%;
+  }
+
+  #added-value {
+    width: 20%;
+  }
+
+  #added-button {
+    width: 5%;
+  }
+  .addedButton {
+    background-color: red;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 0;
+  }
+  .margin-right-20px {
+    margin-right: 20px;
+  }
+  .inline-input {
+    display: inline-block;
+  }
+  div.natcheckbox {
+    margin-bottom: 40px;
+  }
+  input.two {
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+ input[id$="new_party"] {/*select input elements whos id ends with "new_party"*/
+    color: #236b09
+ }
+ .party_value {
+    display: inline-flexbox;
+ }
+ /*Format placeholder*/
+ input[id$="new_party"]::-webkit-input-placeholder { /* Edge */
+  color: rgb(170, 39, 39);
+}
+input[id$="new_party"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(170, 39, 39);
+}
+input[class$="new_party"]::placeholder {
+  color: rgb(170, 39, 39);
+}
+.width-50 {
+  width: 50%;
+}
+.width-5 {
+  width: 5%;
+}
+.width-15 {
+  width: 15%;
+}
+.width-80 {
+  width: 80%;
+}
+.margin-right-10 {
+  margin-right: 10px;
+}
+.padding-0 {
+  padding: 0px;
+}
+.line-height-1-6 {
+  line-height: 1.6;
+}
+.margin-top-13 {
+  margin-top: 13px;
+}
+.background-color-red {
+  background: rgb(170, 39, 39);
+}
+.boarder-none {
+  border: 0px solid rgba(250, 250, 250, 0.8);
+}
+.width-65 {
+  width: 65%;
+}
+.width-10 {
+  width: 10%;
+}
+.width-4 {
+  width: 4%
+}
+.width-12 {
+  width: 12%
+}
+.margin-left-10 {
+  margin-left: 10px;
+}
